@@ -73,15 +73,15 @@ Câu A4
 + Sai mục đích (table chỉ dùng cho hàng cột)  
 
 Câu B3
-+ Lỗi 1: Dòng 1 — Thiếu <!DOCTYPE html> — Sửa <!DOCTYPE> thành <!DOCTYPE html>
-+ Lỗi 2: Dòng 4 — Thẻ <title> không đóng — Thêm </title>
-+ Lỗi 3: Dòng 5 — Sai charset "utf8" — Sửa thành "UTF-8"
-+ Lỗi 4: Dòng 8 — Thẻ <h1> không đóng — Sửa thành </h1>
-+ Lỗi 5: Dòng 12 — Thẻ <a> không đóng — Thêm </a>
++ Lỗi 1: Dòng 1 — Thiếu !DOCTYPE html — Sửa !DOCTYPE thành !DOCTYPE html
++ Lỗi 2: Dòng 4 — Thẻ title không đóng — Thêm /title
++ Lỗi 3: Dòng 5 — Sai charset utf8 — Sửa thành UTF-8
++ Lỗi 4: Dòng 8 — Thẻ h1 không đóng — Sửa thành /h1
++ Lỗi 5: Dòng 12 — Thẻ a không đóng — Thêm /a
 + Lỗi 6: Dòng 20 — Ảnh thiếu dấu ngoặc kép và thiếu alt — Thêm src="..." và alt
-+ Lỗi 7: Dòng 22 — Sai thứ tự thẻ <b> — Sửa thành <strong> đúng vị trí
-+ Lỗi 8: Dòng 31 — Table không có <thead> — Thêm <thead>
-+ Lỗi 9: Dòng 29,30 — Table dùng <td> cho header — Sửa thành <th>
-+ Lỗi 10: Dòng 40 — Dùng 2 thẻ <main> — Thay cái thứ 2 bằng <aside>
-+ Lỗi 11: Dòng 45 — Thẻ <p> trong footer không đóng — Thêm </p>
-+ Lỗi 12: Thiếu ngôn ngữ trong <html> — Thêm lang="vi"
++ Lỗi 7: Dòng 22 — Sai thứ tự thẻ b — Sửa thành strong đúng vị trí
++ Lỗi 8: Dòng 31 — Table không có thead — Thêm thead
++ Lỗi 9: Dòng 29,30 — Table dùng td cho header — Sửa thành th
++ Lỗi 10: Dòng 40 — Dùng 2 thẻ main — Thay cái thứ 2 bằng aside
++ Lỗi 11: Dòng 45 — Thẻ p trong footer không đóng — Thêm /p
++ Lỗi 12: Thiếu ngôn ngữ trong html — Thêm lang="vi"
