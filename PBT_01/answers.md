@@ -98,3 +98,104 @@ Câu B4
 + action: /tim-kiem
 + method: không được khai báo mặc định của là GET
 + input types: input id="skw" type="text"
+
+Câu C1
+```html
+<!-- header: phần đầu trang -->
+<header>
+    <!-- nav: menu điều hướng -->
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+</header>
+
+<main> <!-- main: nội dung chính -->
+
+    <!-- breadcrumb: điều hướng đường dẫn -->
+    <nav aria-label="breadcrumb"> <!-- nav vì là điều hướng -->
+        <ol> <!-- ol vì có thứ tự -->
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Điện thoại</a></li>
+            <li>iPhone 16</li>
+        </ol>
+    </nav>
+
+    <!-- khu vực ảnh sản phẩm -->
+    <section>
+        <h2>Ảnh sản phẩm</h2>
+
+        <div> <!-- div: nhóm nhiều ảnh -->
+            <img src="https://placehold.co/200" alt="ảnh 1">
+            <img src="https://placehold.co/200" alt="ảnh 2">
+            <img src="https://placehold.co/200" alt="ảnh 3">
+            <img src="https://placehold.co/200" alt="ảnh 4">
+            <img src="https://placehold.co/200" alt="ảnh 5">
+        </div>
+    </section>
+
+    <!-- thông tin sản phẩm -->
+    <section>
+        <h1>iPhone 16</h1> <!-- h1: tên sản phẩm chính -->
+        <p>Giá: 25.990.000đ</p>
+        <p>Đánh giá: ⭐⭐⭐⭐☆</p>
+        <p>Mô tả sản phẩm...</p>
+    </section>
+
+    <!-- bảng thông số -->
+    <section>
+        <h2>Thông số kỹ thuật</h2>
+
+        <table border="1"> <!-- table: dữ liệu dạng bảng -->
+            <tr>
+                <th>Thông số</th>
+                <th>Chi tiết</th>
+            </tr>
+            <tr>
+                <td>Màn hình</td>
+                <td>6.7 inch</td>
+            </tr>
+            <tr>
+                <td>Camera</td>
+                <td>48MP</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- đánh giá / bình luận -->
+    <section>
+        <h2>Đánh giá</h2>
+
+        <article> <!-- article: 1 bình luận -->
+            <p>Người dùng A: Sản phẩm tốt</p>
+        </article>
+
+        <article>
+            <p>Người dùng B: Đáng mua</p>
+        </article>
+    </section>
+
+</main>
+
+<!-- sidebar -->
+<aside> <!-- aside: nội dung phụ -->
+    <h2>Sản phẩm tương tự</h2>
+
+    <article>
+        <p>iPhone 15</p>
+    </article>
+
+    <article>
+        <p>Samsung S24</p>
+    </article>
+</aside>
+
+<!-- footer -->
+<footer>
+    <p>© 2026 Shop</p>
+</footer>
+```
+
+Câu C2
+Dùng div cho mọi thứ có thể giúp viết nhanh lúc đầu, nhưng về lâu dài là một lựa chọn kém về kỹ thuật. Về SEO, các công cụ tìm kiếm như Google dựa vào semantic HTML để hiểu cấu trúc trang. Nếu chỉ dùng div, Google khó phân biệt đâu là nội dung chính, đâu là menu hay footer, dẫn đến việc index kém hiệu quả hơn. Về Accessibility, semantic HTML giúp trang web có cấu trúc rõ ràng, dễ điều hướng và thân thiện hơn với người dùng, đặc biệt là khi truy cập trên nhiều thiết bị khác nhau.Một ví dụ cụ thể: khi xây dựng trang sản phẩm, nếu dùng article cho mỗi sản phẩm, Google có thể hiểu đây là một nội dung độc lập, từ đó cải thiện khả năng hiển thị trên kết quả tìm kiếm. Đồng thời, Đồng thời, cấu trúc trang cũng rõ ràng hơn so với một loạt div không có ý nghĩa.Tuy nhiên, không phải lúc nào div cũng sai. Trong thực tế, div vẫn rất phù hợp khi dùng làm container để nhóm các phần tử phục vụ cho layout hoặc styling bằng CSS.
