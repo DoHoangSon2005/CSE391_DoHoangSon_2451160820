@@ -10,12 +10,14 @@ Câu A1
 + type="file" → Upload file → Dùng accept, multiple → Dùng upload ảnh đánh giá
 + type="url" → Ô nhập link → Tự kiểm tra http/https → Dùng nhập website người bán
 
+
 Câu A2
 + Trường hợp 1: Không submit được do thuộc tính required bắt buộc phải nhập, nhưng ô đang để trống
 + Trường hợp 2: Không submit được do type="email" yêu cầu đúng định dạng email (phải có @), nhưng giá trị "abc" không hợp lệ
 + Trường hợp 3: Không submit được do giá trị nhập là 15 vượt quá max="10" nên bị lỗi
 + Trường hợp 4: Không submit được do pattern=[0-9]{10} yêu cầu đúng 10 chữ số, nhưng "abc123" không đúng định dạng
 + Trường hợp 5: Không submit được do minlength="8" yêu cầu ít nhất 8 ký tự, nhưng "123" chỉ có 3 ký tự
+
 
 Câu A3
 
@@ -38,6 +40,7 @@ Câu A3
 4. 
 + Vì label đã mô tả đầy đủ rồi. Nếu dùng thêm aria-label sẽ bị trùng thông tin, gây rối.
 
+
 Câu A4
 
 1. 
@@ -50,6 +53,7 @@ Câu A4
 3. 
 + Mô tả nội dung ảnh và hiển thị khi ảnh lỗi.
 + Ví dụ: iPhone 16: alt="iPhone 16 màu đen", Ảnh trang trí: alt="", Biểu đồ: alt="Biểu đồ doanh thu Q1/2026"
+
 
 Câu A5 
 1. Cách 1: img
