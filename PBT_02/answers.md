@@ -18,6 +18,7 @@ Câu A2
 + Trường hợp 5: Không submit được do minlength="8" yêu cầu ít nhất 8 ký tự, nhưng "123" chỉ có 3 ký tự
 
 Câu A3
+
 1. 
 + label giúp liên kết với input thông qua for và id. Khi click vào label thì con trỏ sẽ tự động vào ô input giúp người dùng biết chức năng của ô nhập.
 2. 
@@ -38,6 +39,7 @@ Câu A3
 + Vì label đã mô tả đầy đủ rồi. Nếu dùng thêm aria-label sẽ bị trùng thông tin, gây rối.
 
 Câu A4
+
 1. 
 + Giúp ảnh chỉ tải khi cuộn tới gần vị trí của ảnh 
 + tăng tốc độ load trang, tiết kiệm dữ liệu.
