@@ -66,45 +66,61 @@ Câu A5
 Câu C1
 + Lỗi 1: Dòng 2 — Input "Tên" không có label và thiếu id, name
 Sửa:
-'<label for="name">Tên:</label>'
-'<input type="text" id="name" name="name">'
+```html
+<label for="name">Tên:</label>
+<input type="text" id="name" name="name">
+```
 
 + Lỗi 2: Dòng 4 — Input email không có label và thiếu id, name
 Sửa:
-'<label for="email">Email:</label>'
-'<input type="email" id="email" name="email" placeholder="Email của bạn">'
+```html
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Email của bạn">
+```
 
 + Lỗi 3: Dòng 6 — Input password không có label và thiếu id, name
 Sửa:
-'<label for="password">Mật khẩu:</label>'
-'<input type="password" id="password" name="password" placeholder="Mật khẩu">'
+```html
+<label for="password">Mật khẩu:</label>
+<input type="password" id="password" name="password" placeholder="Mật khẩu">
+```
 
 + Lỗi 4: Dòng 7 — Input xác nhận password không có label và thiếu id, name
 Sửa:
-'<label for="repass">Nhập lại mật khẩu:</label>'
-'<input type="password" id="repass" name="repass" placeholder="Nhập lại mật khẩu">'
+```html
+<label for="repass">Nhập lại mật khẩu:</label>
+<input type="password" id="repass" name="repass" placeholder="Nhập lại mật khẩu">
+```
 
 + Lỗi 5: Dòng 9 — Phone dùng type="text" sai, không dùng value cho dữ liệu cần nhập vào và thiếu id, name
 Sửa:
-'<label for="phone">Phone:</label>'
-'<input type="tel" id="phone" name="phone" placeholder="1234567890">'
+```html
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="1234567890">
+```
 
 + Lỗi 6: Dòng 11 — select không có label và thiếu id, name
 Sửa:
-'<label for="city">Thành phố:</label>'
-'<select id="city" name="city">'
- '   <option>Hà Nội</option>'
- '   <option>TP.HCM</option>'
-'</select>'
+```html
+<label for="city">Thành phố:</label>
+<select id="city" name="city">
+   <option>Hà Nội</option>
+   <option>TP.HCM</option>
+</select>
+```
 
 + Lỗi 7: Dòng 16 — Checkbox không có input
 Sửa:
-'<input type="checkbox" id="agree" required>'
-'<label for="agree">Tôi đồng ý điều khoản</label>'
+```html
+<input type="checkbox" id="agree" required>
+<label for="agree">Tôi đồng ý điều khoản</label>
+```
 
 + Lỗi 8: Dòng 19 — Dùng type="submit" value="Gửi" không hợp lý
 Sửa:
-'<button type="submit">Gửi</button>'
+```html
+<button type="submit">Gửi</button>
+```
 
 Câu C2
 1. 
