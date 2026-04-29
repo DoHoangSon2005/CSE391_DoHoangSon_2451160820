@@ -62,3 +62,60 @@ Câu A5
 2. Cách 2: figure
 + Dùng khi ảnh cần có mô tả hoặc chú thích đi kèm.
 + Ví dụ: Ảnh sản phẩm kèm tên và giá, anh biểu đồ kèm mô tả nội dung
+
+Câu C1
++ Lỗi 1: Dòng 2 — Input "Tên" không có label và thiếu id, name
+Sửa:
+'<label for="name">Tên:</label>'
+'<input type="text" id="name" name="name">'
+
++ Lỗi 2: Dòng 4 — Input email không có label và thiếu id, name
+Sửa:
+'<label for="email">Email:</label>'
+'<input type="email" id="email" name="email" placeholder="Email của bạn">'
+
++ Lỗi 3: Dòng 6 — Input password không có label và thiếu id, name
+Sửa:
+'<label for="password">Mật khẩu:</label>'
+'<input type="password" id="password" name="password" placeholder="Mật khẩu">'
+
++ Lỗi 4: Dòng 7 — Input xác nhận password không có label và thiếu id, name
+Sửa:
+'<label for="repass">Nhập lại mật khẩu:</label>'
+'<input type="password" id="repass" name="repass" placeholder="Nhập lại mật khẩu">'
+
++ Lỗi 5: Dòng 9 — Phone dùng type="text" sai, không dùng value cho dữ liệu cần nhập vào và thiếu id, name
+Sửa:
+'<label for="phone">Phone:</label>'
+'<input type="tel" id="phone" name="phone" placeholder="1234567890">'
+
++ Lỗi 6: Dòng 11 — select không có label và thiếu id, name
+Sửa:
+'<label for="city">Thành phố:</label>'
+'<select id="city" name="city">'
+ '   <option>Hà Nội</option>'
+ '   <option>TP.HCM</option>'
+'</select>'
+
++ Lỗi 7: Dòng 16 — Checkbox không có input
+Sửa:
+'<input type="checkbox" id="agree" required>'
+'<label for="agree">Tôi đồng ý điều khoản</label>'
+
++ Lỗi 8: Dòng 19 — Dùng type="submit" value="Gửi" không hợp lý
+Sửa:
+'<button type="submit">Gửi</button>'
+
+Câu C2
+1. 
++ CMND/CCCD (12 số):pattern="[0-9]{12}"
++ Số tài khoản (10–15 số):pattern="[0-9]{10,15}"
+2. 
++ Không đủ an toàn vì HTML chỉ kiểm tra phía frontend, người dùng có thể sửa hoặc bỏ qua validation, dữ liệu sai vẫn gửi lên server.
+3. 
++ Kiểm tra 2 password có giống nhau không
++ Kiểm tra email đã tồn tại trong hệ thống chưa
++ Kiểm tra số tài khoản có hợp lệ/thực sự tồn tại không
+4. 
++ Người dùng gửi dữ liệu sai hoặc giả hệ thống vẫn nhận
++ Hacker có thể bypass validation gây lỗi hoặc tấn công hệ thống
