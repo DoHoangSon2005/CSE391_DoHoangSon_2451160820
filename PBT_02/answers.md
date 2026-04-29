@@ -123,6 +123,7 @@ Sửa:
 ```
 
 Câu C2
+
 1. 
 + CMND/CCCD (12 số):pattern="[0-9]{12}"
 + Số tài khoản (10–15 số):pattern="[0-9]{10,15}"
