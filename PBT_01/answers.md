@@ -199,3 +199,6 @@ Câu C1
 
 Câu C2
 Dùng div cho mọi thứ có thể giúp viết nhanh lúc đầu, nhưng về lâu dài là một lựa chọn kém về kỹ thuật. Về SEO, các công cụ tìm kiếm như Google dựa vào semantic HTML để hiểu cấu trúc trang. Nếu chỉ dùng div, Google khó phân biệt đâu là nội dung chính, đâu là menu hay footer, dẫn đến việc index kém hiệu quả hơn. Về Accessibility, semantic HTML giúp trang web có cấu trúc rõ ràng, dễ điều hướng và thân thiện hơn với người dùng, đặc biệt là khi truy cập trên nhiều thiết bị khác nhau.Một ví dụ cụ thể: khi xây dựng trang sản phẩm, nếu dùng article cho mỗi sản phẩm, Google có thể hiểu đây là một nội dung độc lập, từ đó cải thiện khả năng hiển thị trên kết quả tìm kiếm. Đồng thời, Đồng thời, cấu trúc trang cũng rõ ràng hơn so với một loạt div không có ý nghĩa.Tuy nhiên, không phải lúc nào div cũng sai. Trong thực tế, div vẫn rất phù hợp khi dùng làm container để nhóm các phần tử phục vụ cho layout hoặc styling bằng CSS.
+
+Câu D (Chú ý chất lượng míc thấp và âm thanh nhỏ nên cần cho âm lượng cao để nghe)
+https://drive.google.com/file/d/1HRZUwvt8Big2zs7_w5ue7N-yoe4QbaFU/view?usp=sharing
