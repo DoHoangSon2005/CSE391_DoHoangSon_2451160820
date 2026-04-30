@@ -136,3 +136,6 @@ Câu C2
 4. 
 + Người dùng gửi dữ liệu sai hoặc giả hệ thống vẫn nhận
 + Hacker có thể bypass validation gây lỗi hoặc tấn công hệ thống
+
+Câu D(Chú ý chất lượng míc thấp và âm thanh nhỏ nên cần cho âm lượng cao để nghe)
+https://drive.google.com/file/d/1eOuJGOQGnbjY3A9yln6Bw6S6i71VthXp/view?usp=sharing

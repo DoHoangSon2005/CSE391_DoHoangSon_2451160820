@@ -1,2 +1,4 @@
 # CSE391_DoHoangSon_2451160820
-# Chú ý video âm lượng thấy và chất lượng mic kém nên cho âm lượng cao
+# Chú ý video âm lượng thấp và chất lượng mic kém nên cho âm lượng cao để nghê
+# tiến trình
+- Đã hoàn thành PBT01
