@@ -91,10 +91,10 @@ Câu B4
 + header: Dùng cho phần đầu trang gồm menu, logo, thanh tìm kiếm
 + section: Dùng cho phần nội dung sản phẩm gồm ảnh, thông số, đánh giá
 + footer: Dùng cho phần cuối trang gồm thông tin liên hệ, thông tin khác
-2.table:
+2. table:
 + Trang sử dụng ul, li thay vì table để hiển thị danh mục sản phẩm
 + Không dùng thead, tbody
-3.form:
+3. form:
 + action: /tim-kiem
 + method: không được khai báo mặc định của là GET
 + input types: input id="skw" type="text"
