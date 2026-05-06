@@ -57,6 +57,7 @@ Câu A3
 - Khoảng cách = 40 - 10 = 30px
 
 Câu A4
+
 1. 
 - Rule A: (0, 0, 1)
 - Rule B: (0, 1, 0)
