@@ -88,3 +88,19 @@ Câu B2
 + Giải thích sự khác biệt: content-box cộng thêm padding và border vào width nên hộp to hơn
 - phần 2
 + Không dùng border-box: 288 + 548 + 288 = 1124px > 1000px
+
+Bài B3 
+
+1. 
+- p {color: black;} Specificity: (0,0,1)
+- .text {color: blue;} Specificity: (0,1,0)
+- .highlight {color: green;} Specificity: (0,1,0)
+- p.text {color: orange;} Specificity: (0,1,1)
+- p.highlight {color: purple;} Specificity: (0,1,1)
+- .text.highlight {color: brown;} Specificity: (0,2,0)
+- #demo {color: red;} Specificity: (1,0,0)
+- p#demo {color: pink;} Specificity: (1,0,1)
+- #demo.text {color: gray;} Specificity: (1,1,0)
+- p#demo.text.highlight {color: cyan;} Specificity: (1,2,1)
+2. Màu cuối cùng là cyan vì rule "p#demo.text.highlight" có specificity cao nhất:
+3. Nếu đổi thứ tự rules thì kết quả không đổi vì Rule "p#demo.text.highlight" vẫn có specificity cao nhất
