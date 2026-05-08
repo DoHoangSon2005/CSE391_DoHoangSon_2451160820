@@ -72,3 +72,11 @@ Câu A4
 4. 
 - Element sẽ có màu đen
 - Vì !important ưu tiên cao nhất
+
+Câu B1
+
+1. Element: body, header, table
+2. Class: .active
+3. ID: #about
+4. Descendant: nav a
+5. Pseudo-class: nav a:hover
