@@ -1,0 +1,53 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.box1 {
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+
+.box2 {
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 20px auto;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.c1 {
+    width: 250px;
+    padding: 15px;
+    background-color: lightblue;
+    float: left;
+    margin: 0;
+}
+
+.c2 {
+    width: 500px;
+    padding: 20px;
+    background-color: lightgreen;
+    float: left;
+    margin: 0;
+}
+
+.c3 {
+    width: 250px;
+    padding: 15px;
+    background-color: lightpink;
+    float: left;
+    margin: 0;
+}

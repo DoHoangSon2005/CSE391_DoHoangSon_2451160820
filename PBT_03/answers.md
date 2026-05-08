@@ -80,3 +80,11 @@ Câu B1
 3. ID: #about
 4. Descendant: nav a
 5. Pseudo-class: nav a:hover
+
+Câu B2
+- Phần 1
++ Hộp 1 (content-box): chiều rộng thực tế = 350px (đo từ DevTools)
++ Hộp 2 (border-box): chiều rộng thực tế = 300px (đo từ DevTools)
++ Giải thích sự khác biệt: content-box cộng thêm padding và border vào width nên hộp to hơn
+- phần 2
++ Không dùng border-box: 288 + 548 + 288 = 1124px > 1000px
