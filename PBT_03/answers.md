@@ -1,4 +1,5 @@
 Câu A1
+
 1. Inline CSS (trong thẻ) 
 + Ví dụ: 
 ```html
@@ -33,6 +34,7 @@ Câu A1
 + Dùng: Website, dự án lớn
 
 Câu A2
+
 1. h1                           → Chọn: ShopTLU
 2. .price                       → Chọn: 25.990.000đ, 45.990.000đ
 3. #app header                  → Chọn: ShopTLU, Home, Products, About
@@ -43,6 +45,7 @@ Câu A2
 8. .top-bar.dark h1              → Chọn: ShopTLU
 
 Câu A3
+
 1. Trường hợp 1: 
 - Chiều rộng hiển thị = width + padding×2 + border×2 = 400 + 20×2 + 5×2 = 450px
 - Không gian chiếm trên trang = 450 + margin×2 = 450 + 10×2 = 470px
@@ -102,5 +105,7 @@ Bài B3
 - p#demo {color: pink;} Specificity: (1,0,1)
 - #demo.text {color: gray;} Specificity: (1,1,0)
 - p#demo.text.highlight {color: cyan;} Specificity: (1,2,1)
-2. Màu cuối cùng là cyan vì rule "p#demo.text.highlight" có specificity cao nhất:
-3. Nếu đổi thứ tự rules thì kết quả không đổi vì Rule "p#demo.text.highlight" vẫn có specificity cao nhất
+2. 
+- Màu cuối cùng là cyan vì rule "p#demo.text.highlight" có specificity cao nhất:
+3. 
+- Nếu đổi thứ tự rules thì kết quả không đổi vì rule "p#demo.text.highlight" vẫn có specificity cao nhất
