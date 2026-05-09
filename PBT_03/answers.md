@@ -121,3 +121,26 @@ Câu C1
 - 2 cách sửa
 + Cách 1 — Dùng border-box
 + Cách 2 — Không dùng border-box: giảm width
+
+Câu C2
+
+1. "Sản phẩm A" (h2)
+- container → kế thừa font-size: 14px
+- card .title → đổi thành 20px
+- card → kế thừa color: blue
+- #featured .title → đổi thành red
+- highlight { color: green !important; } → !important ưu tiên
+→ Font-size: 20px, color: green
+2. "Mô tả sản phẩm" (p trong card featured)
+- card → color: blue
+- card p { color: inherit; } → p lấy màu từ cha (.card)
+→ Color = blue
+3. "Sản phẩm B" (h2) có font-size = 20px và color = blue
+- container → kế thừa 14px
+- card .title → đổi thành 20px
+- card → kế thừa color: blue
+→ Font-size: 20px, color: blue
+4. "Mô tả sản phẩm B" (p.highlight) có color = green
+- card → color: blue
+- highlight { color: green !important; }→ !important ưu tiên
+→ Color = green
