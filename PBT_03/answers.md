@@ -109,3 +109,15 @@ Bài B3
 - Màu cuối cùng là cyan vì rule "p#demo.text.highlight" có specificity cao nhất:
 3. 
 - Nếu đổi thứ tự rules thì kết quả không đổi vì rule "p#demo.text.highlight" vẫn có specificity cao nhất
+
+Câu C1
+
+1. 
+- Sidebar = 300 + 40 + 2 = 342px
+- content = 660 + 60 + 2 = 722px
+2. 
+- Layout vỡ vì Sidebar + content = 342 + 722 = 1064px > 960px không đủ chỗ để đặt sidebar và content trên cùng 1 hàng.
+3. 
+- 2 cách sửa
++ Cách 1 — Dùng border-box
++ Cách 2 — Không dùng border-box: giảm width
