@@ -114,9 +114,7 @@ git commit -m "[FEATURE] Style contact form inputs"
 git commit -m "[FEATURE] Add responsive footer"
 git commit -m "[REFACTOR] Final responsive adjustments"
 ```
-git add .
-git commit -m "[FEATURE] Style contact form inputs"
-git push
+
 ---
 
 ## 📝 Bài tập (4 bài)

@@ -110,7 +110,7 @@
 .form-group input:invalid,
 .form-group textarea:invalid {
 
-    border-color: #ef4444;
+    border-color: #000000;
 }
 
 .form-group input:valid,
