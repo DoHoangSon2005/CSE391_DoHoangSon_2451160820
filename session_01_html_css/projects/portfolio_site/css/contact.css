@@ -163,3 +163,21 @@ textarea {
     box-shadow:
         0 10px 20px rgba(99,102,241,0.2);
 }
+
+@media (max-width: 768px) {
+
+    .contact-wrapper {
+
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+
+        text-align: center;
+    }
+
+    .info-item {
+
+        justify-content: center;
+    }
+}
