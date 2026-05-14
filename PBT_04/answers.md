@@ -15,27 +15,33 @@ Câu 1
 Câu 2
 - Trường hợp 1
 → 4 item → nằm trên 1 hàng, mỗi item rộng bằng nhau
+```html
 [1] [2] [3] [4]
-
+```
 - Trường hợp 2
 → 6 items → 1 hàng chứa 2 item = 3 hàng 2 cột
+```html
 [1] [2]
 [3] [4]
 [5] [6]
-
+```
 - Trường hợp 3
 → 3 item → 1 hàng, item đầu trái, item cuối phải, item giữa ở giữa
+```html
 [1]        [2]        [3]
-
+```
 - Trường hợp 4
 → 3 items → 3 cột
 cột 1 = 200px
 cột 2 = tự giãn
 cột 3 = 200px
+```html
 [200px] [ rộng còn lại ] [200px]
-
+```
 - Trường hợp 5
 → 7 item → 3 hàng 3 cột, Item 7 nằm hàng cuối cột đầu
+```html
 [1] [2] [3]
 [4] [5] [6]
 [7]
+```
