@@ -45,3 +45,35 @@ cột 3 = 200px
 [4] [5] [6]
 [7]
 ```
+
+Câu C1
+
+1. Navigation bar ngang (logo + menu + buttons)
+- Dùng: Flexbox
+- Vì: Flexbox tốt cho sắp xếp các item theo 1 hàng ngang, dễ căn giữa và spacing
+
+2. Lưới ảnh Instagram (3 cột đều nhau, số ảnh không biết trước)
+- Dùng: Grid
+- Vì: Grid phù hợp layout dạng hàng + cột đều nhau
+
+3. Layout blog: main content + sidebar
+- Dùng: Kết hợp cả hai
+- Vì: Grid để chia bố cục. Bên trong từng phần có thể dùng Flexbox để căn chỉnh item
+
+4. Footer với 4 cột thông tin (Về chúng tôi, Liên kết, Hỗ trợ, Liên hệ)
+- Dùng: Grid
+- Vì: Grid có thể tạo nhiều cột đều nhau dễ dàng
+
+5. Card sản phẩm (ảnh trên, text giữa, nút dưới — nút luôn dính đáy)
+- Dùng: Flexbox
+- Vì: Flexbox column giúp nút luôn dính đáy
+
+Câu C2
+
+1. 
+- Nguyên nhân: Nội dung mỗi card dài ngắn khác nhau nên chiều cao khác nhau.
+Nút "Mua" không được đẩy xuống đáy card.
+2. 
+- Nguyên nhân: Dùng display: flex nhưng chưa dùng justify-content, align-items nên item vẫn ở góc trái trên.
+3. 
+- Nguyên nhân: Flexbox mặc định cho phép item co (flex-shrink: 1), nên sidebar bị ép nhỏ khi content dài.
