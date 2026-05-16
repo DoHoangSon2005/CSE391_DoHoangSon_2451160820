@@ -1,12 +1,34 @@
 :root {
 
-    --bs-primary: #6366f1;
-    --bs-secondary: #8b5cf6;
+    /*--bs-primary: #6366f1;
+    --bs-secondary: #8b5cf6;*/
+
+    --bs-primary: #14b8a6;
+    --bs-primary-rgb: 20, 184, 166;
+
+    --bs-secondary: #64748b;
+    --bs-secondary-rgb: 100, 116, 139;
+
+    --custom-primary-hover: #0d9488;
+    --custom-bg-light: #f8fafc;
+    --custom-text: #334155;
 }
 
 body {
 
-    font-family:
-        'Segoe UI',
-        sans-serif;
+    /*font-family:'Segoe UI', sans-serif;*/
+    
+    font-family: 'Inter', sans-serif;
+    background-color: var(--custom-bg-light);
+    color: var(--custom-text);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--custom-primary-hover);
+    border-color: var(--custom-primary-hover);
 }
