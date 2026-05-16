@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/custom-theme.css">
-
+    
 </head>
-
-<body>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    ></script>
-
-    <script src="js/main.js"></script>
-
-</body>
 
 <body>
 
@@ -27,10 +19,7 @@
 
         <div class="container">
 
-            <a
-                class="navbar-brand fw-bold text-primary"
-                href="#"
-            >
+            <a class="navbar-brand fw-bold text-primary" href="#">
                 Đỗ Hoàng Sơn
             </a>
 
@@ -43,10 +32,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div
-                class="collapse navbar-collapse"
-                id="navbarNav"
-            >
+            <div class="collapse navbar-collapse" id="navbarNav">
 
                 <ul class="navbar-nav ms-auto">
 
@@ -107,18 +93,15 @@
 
     </section>
 
-    <section
-        id="portfolio"
-        class="py-5"
-    >
+    <section id="portfolio" class="py-section">
 
         <div class="container">
 
-            <h2 class="text-center mb-5">
+            <h2 class="text-center section-title">
                 My Portfolio
             </h2>
 
-            <div class="row g-4">
+            <div class="row gap-custom">
 
                 <div class="col-12 col-md-6 col-lg-4">
 
@@ -152,80 +135,75 @@
 
     </section>
 
-<section
-    id="about"
-    class="py-5 bg-light"
->
+    <section id="about" class="py-section bg-light">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="text-center mb-5">
-            About Me
-        </h2>
+            <h2 class="text-center section-title">
+                About Me
+            </h2>
 
-        <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5">
 
-            <div class="col-lg-5 text-center">
+                <div class="col-lg-5 text-center">
 
-                <img src="Images/profile.jpg" class="rounded-circle img-fluid" alt="Profile">
-            </div>
+                    <img
+                        src="Images/profile.jpg"
+                        class="rounded-circle img-fluid"
+                        alt="Profile"
+                    >
 
-            <div class="col-lg-7">
+                </div>
 
-                <p class="lead">
-                    I'm a passionate developer.
-                </p>
+                <div class="col-lg-7">
 
-                <p>
-                    Specialized in frontend and backend development.
-                </p>
+                    <p class="lead">
+                        I'm a passionate developer.
+                    </p>
+
+                    <p>
+                        Specialized in frontend and backend development.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <section id="skills" class="py-section">
 
-<section
-    id="skills"
-    class="py-5"
->
+        <div class="container">
 
-    <div class="container">
+            <h2 class="text-center section-title">
+                My Skills
+            </h2>
 
-        <h2 class="text-center mb-5">
-            My Skills
-        </h2>
+            <div class="row g-4">
 
-        <div class="row g-4">
+                <div class="col-md-6">
 
-            <div class="col-md-6">
+                    <div class="mb-4">
 
-                <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
 
-                    <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-semibold">
+                                HTML5
+                            </span>
 
-                        <span class="fw-semibold">
-                            HTML5
-                        </span>
+                            <span class="text-primary">
+                                75%
+                            </span>
 
-                        <span class="text-primary">
-                            75%
-                        </span>
+                        </div>
 
-                    </div>
+                        <div class="progress" style="height: 12px;">
 
-                    <div
-                        class="progress"
-                        style="height: 12px;"
-                    >
+                            <div class="progress-bar bg-primary" style="width: 75%;"></div>
 
-                        <div
-                            class="progress-bar"
-                            style="width: 75%;"
-                        ></div>
+                        </div>
 
                     </div>
 
@@ -235,8 +213,12 @@
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
 
 </html>
