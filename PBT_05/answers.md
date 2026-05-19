@@ -116,3 +116,9 @@ nav {
 + Vì SCSS không phải CSS chuẩn, trình duyệt chỉ đọc được .css
 + huyển SCSS → CSS  cần compile:
 
+Câu B3
+- Dùng variables để quản lý màu sắc, spacing, font dễ hơn.
+- Dùng nesting để CSS giống cấu trúc HTML.
+- Dùng mixins để tái sử dụng code responsive, flex, shadow.
+- Dùng partials để chia nhỏ file SCSS dễ quản lý.
+- Lệnh compile: sass style.scss style.css
