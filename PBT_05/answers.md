@@ -144,3 +144,124 @@ Câu C1
 + Quảng cáo/sidebar
 - Hiển thị thêm nhiều nội dung phụ.
 - Font và khoảng cách lớn hơn.
+
+Câu C2
+
+1. Mobile
+┌──────────────────────┐
+│ LOGO     ☎ Hotline   │
+├──────────────────────┤
+│     HERO IMAGE       │
+├──────────────────────┤
+│    ẢNH MÓN ĂN        │
+│      (1 cột)         │
+├──────────────────────┤
+│    FORM ĐẶT BÀN      │
+│  ngày / giờ / note   │
+├──────────────────────┤
+│     GOOGLE MAP       │
+├──────────────────────┤
+│       FOOTER         │
+└──────────────────────┘
+- Grid ảnh: 1 cột
+- Form nằm dưới gallery
+- Một số text phụ có thể ẩn
+- Map nằm cuối trang
+- Không có sidebar
+
+2. Tablet
+┌──────────────────────────────┐
+│ LOGO      MENU      HOTLINE │
+├──────────────────────────────┤
+│         HERO IMAGE           │
+├──────────────────────────────┤
+│      GRID ẢNH (2 cột)       │
+├──────────────┬───────────────┤
+│ FORM ĐẶT BÀN │ GOOGLE MAP    │
+├──────────────┴───────────────┤
+│           FOOTER             │
+└──────────────────────────────┘
+- Grid ảnh: 2 cột
+- Form và map nằm cạnh nhau
+- Navigation ngang đơn giản
+- Không cần sidebar riêng
+
+3. Desktop 
+┌─────────────────────────────────────┐
+│ LOGO   MENU NGANG      ☎ HOTLINE   │
+├─────────────────────────────────────┤
+│             HERO IMAGE              │
+├──────────┬──────────────────┬───────┤
+│ FILTER   │ GRID ẢNH 3 cột  │ MAP   │
+│ SIDEBAR  │                  │       │
+├──────────┴──────────────────┴───────┤
+│           FORM ĐẶT BÀN              │
+├─────────────────────────────────────┤
+│               FOOTER                │
+└─────────────────────────────────────┘
+- Layout 3 cột
+- Grid ảnh: 3 cột
+- Có sidebar filter/menu
+- Map đặt bên phải
+- Form rộng phía dưới
+
+4. CSS Skeleton
+```html
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header,
+.hero,
+.gallery,
+.booking,
+.map,
+.footer {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.layout {
+    display: block;
+}
+
+.sidebar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr 300px;
+        gap: 20px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+```
