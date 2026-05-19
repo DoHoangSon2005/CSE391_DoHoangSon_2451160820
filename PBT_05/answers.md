@@ -122,3 +122,25 @@ Câu B3
 - Dùng mixins để tái sử dụng code responsive, flex, shadow.
 - Dùng partials để chia nhỏ file SCSS dễ quản lý.
 - Lệnh compile: sass style.scss style.css
+
+Câu C1
+
+1. Mobile (375px)
+- Navigation thu gọn, menu nhỏ hơn.
+- Nhiều mục bị ẩn để tiết kiệm không gian.
+- Nội dung hiển thị 1 cột.
+- Font nhỏ hơn desktop.
+- Sidebar/quảng cáo gần như bị ẩn.
+2. Tablet (768px)
+- Navigation hiển thị nhiều mục hơn mobile.
+- Content bắt đầu chia 2 cột.
+- Một số tin phụ xuất hiện lại.
+- Font lớn hơn mobile.
+3. Desktop (1440px)
+- Navigation đầy đủ ngang màn hình.
+- Trang chia nhiều cột:
++ Tin chính
++ Tin phụ
++ Quảng cáo/sidebar
+- Hiển thị thêm nhiều nội dung phụ.
+- Font và khoảng cách lớn hơn.
