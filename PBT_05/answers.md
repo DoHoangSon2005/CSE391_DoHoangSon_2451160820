@@ -49,13 +49,13 @@ Câu A1
 + Phù hợp xu hướng hiện nay
 
 Câu A2 
-| Breakpoint | Pixel || Thiết bị | Ví dụ grid |
-|---------------------|--------------------||---------------------|--------------------|
-| Extra small | <576px || Điện thoại || 1 cột |
-| Small | ≥576px || Điện thoại lớn || 2 cột |
-| Medium | ≥768px || Tablet || 2-3 cột |
-| Large | ≥992px || Laptop || 3-4 cột |
-| Extra large | ≥1200px || Desktop lớn || 4-5 cột |
+| Breakpoint | Pixel | Thiết bị | Ví dụ grid |
+|---------------------|--------------------|---------------------|--------------------|
+| Extra small | <576px | Điện thoại | 1 cột |
+| Small | ≥576px | Điện thoại lớn | 2 cột |
+| Medium | ≥768px | Tablet | 2-3 cột |
+| Large | ≥992px | Laptop | 3-4 cột |
+| Extra large | ≥1200px | Desktop lớn | 4-5 cột |
 
 Câu A3
 | Chiều rộng màn hình | `.container` width |
