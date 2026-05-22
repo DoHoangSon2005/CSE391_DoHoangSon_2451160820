@@ -9,6 +9,15 @@ console.log([] + []);                // ???
 console.log([] + {});                // ???
 console.log({} + []);                // ???
 
+console.log(5 == "5");                // ???
+console.log(5 === "5");               // ???
+console.log(null == undefined);       // ???
+console.log(null === undefined);      // ???
+console.log(NaN == NaN);             // ???
+console.log(0 == false);             // ???
+console.log(0 === false);            // ???
+console.log("" == false);            // ???
+
 if ("0") console.log("A");           // In hay không?
 if ("") console.log("B");            // In hay không?
 if ([]) console.log("C");            // In hay không?
