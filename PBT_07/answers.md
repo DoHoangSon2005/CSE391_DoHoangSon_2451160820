@@ -123,9 +123,7 @@ Lỗi 2 — Không kiểm tra input có phải số không
 + thành:
 
 if (isNaN(giaBan) || isNaN(phanTramGiam)) {
-
     return "Input không hợp lệ";
-
 }
 
 + Giải thích: "100000" là string, nên cần validate dữ liệu đầu vào
