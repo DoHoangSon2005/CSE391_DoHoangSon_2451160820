@@ -121,9 +121,13 @@ Câu C1
 Lỗi 2 — Không kiểm tra input có phải số không
 + Sửa: const gia = tinhGiaGiamGia("100000", 20) 
 + thành:
+
 if (isNaN(giaBan) || isNaN(phanTramGiam)) {
+
     return "Input không hợp lệ";
+
 }
+
 + Giải thích: "100000" là string, nên cần validate dữ liệu đầu vào
 - Lỗi 3 — Dùng = thay vì ===
 + Sửa: if (giaSauGiam = 0)
@@ -140,6 +144,9 @@ if (isNaN(giaBan) || isNaN(phanTramGiam)) {
 - Lỗi 6 — Nên ép kiểu Number
 + Sửa: const gia = tinhGiaGiamGia("100000", 20)
 + thành: 
+
 giaBan = Number(giaBan);
+
 phanTramGiam = Number(phanTramGiam);
+
 + Giải thích: Đảm bảo phép tính luôn dùng number.
