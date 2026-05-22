@@ -23,7 +23,7 @@ Câu A1
 
 4. Đoạn 4
 - Output:
-+ [1, 2, 3, 4]
++ (4) [1, 2, 3, 4]
 - Giải thích:
 + const không cho đổi biến
 + Nhưng vẫn sửa được nội dung bên trong array/object
