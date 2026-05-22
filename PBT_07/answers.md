@@ -111,3 +111,35 @@ var html = `
 </div>
 `;
 ```
+
+Câu C1
+
+- Lỗi 1 — Thiếu ;
++ Sửa: return "Phần trăm giảm không hợp lệ"
++ thành: return "Phần trăm giảm không hợp lệ";
++ Giải thích: thiếu dấu ; cuối dòng. JS vẫn chạy được nhưng không đúng chuẩn
+Lỗi 2 — Không kiểm tra input có phải số không
++ Sửa: const gia = tinhGiaGiamGia("100000", 20) 
++ thành:
+if (isNaN(giaBan) || isNaN(phanTramGiam)) {
+    return "Input không hợp lệ";
+}
++ Giải thích: "100000" là string, nên cần validate dữ liệu đầu vào
+- Lỗi 3 — Dùng = thay vì ===
++ Sửa: if (giaSauGiam = 0)
++ thành: if (giaSauGiam === 0)
++ Giải thích: = là gán giá trị, === mới là so sánh
+- Lỗi 4 — Thiếu ; ở console.log
++ Sửa: console.log("Sản phẩm miễn phí!")
++ thành: console.log("Sản phẩm miễn phí!");
++ Giải thích: thiếu dấu ; cuối dòng. JS vẫn chạy được nhưng không đúng chuẩn
+- Lỗi 5 — var trong vòng lặp với setTimeout
++ Sửa: for (var i = 0; i < 5; i++) {
++ thành: for (let i = 0; i < 5; i++) {
++ Giải thích: var không có block scope, Callback trong setTimeout dùng chung biến i
+- Lỗi 6 — Nên ép kiểu Number
++ Sửa: const gia = tinhGiaGiamGia("100000", 20)
++ thành: 
+giaBan = Number(giaBan);
+phanTramGiam = Number(phanTramGiam);
++ Giải thích: Đảm bảo phép tính luôn dùng number.
