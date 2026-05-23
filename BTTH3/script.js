@@ -92,7 +92,7 @@ function renderStudents() {
                         Sửa
                     </button>
 
-                    <button>
+                    <button onclick="deleteStudent(${i})">
                         Xóa
                     </button>
                 </td>
@@ -256,3 +256,25 @@ function editStudent(index) {
 
 }
 resetForm()
+
+function deleteStudent(index) {
+
+    let check = confirm(
+        "Bạn có chắc muốn xóa sinh viên này không?"
+    );
+
+    if (check === false) {
+
+        return;
+
+    }
+
+    students.splice(index, 1);
+
+    saveStudents();
+
+    renderStudents();
+
+    updateStatistics();
+
+}
