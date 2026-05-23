@@ -129,3 +129,82 @@ loadStudents();
 renderStudents();
 
 updateStatistics();
+
+let openModalBtn =
+    document.getElementById("openModalBtn");
+
+let closeModalBtn =
+    document.getElementById("closeModalBtn");
+
+let studentModal =
+    document.getElementById("studentModal");
+
+let studentForm =
+    document.getElementById("studentForm");
+
+openModalBtn.onclick = function () {
+
+    studentModal.style.display = "block";
+
+};
+
+closeModalBtn.onclick = function () {
+
+    studentModal.style.display = "none";
+
+    resetForm();
+
+};
+
+function resetForm() {
+
+    studentForm.reset();
+
+}
+
+studentForm.onsubmit = function (event) {
+
+    event.preventDefault();
+
+    let id =
+        document.getElementById("studentId").value;
+
+    let name =
+        document.getElementById("studentName").value;
+
+    let birthday =
+        document.getElementById("studentBirthday").value;
+
+    let className =
+        document.getElementById("studentClass").value;
+
+    let score =
+        document.getElementById("studentScore").value;
+
+    let email =
+        document.getElementById("studentEmail").value;
+
+    let student = {
+
+        id: id,
+        name: name,
+        birthday: birthday,
+        className: className,
+        score: Number(score),
+        email: email
+
+    };
+
+    students.push(student);
+
+    saveStudents();
+
+    renderStudents();
+
+    updateStatistics();
+
+    studentModal.style.display = "none";
+
+    resetForm();
+
+};
