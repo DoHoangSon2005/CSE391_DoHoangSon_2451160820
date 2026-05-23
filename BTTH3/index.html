@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quản lý sinh viên</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Quản lý sinh viên</h1>
+
+    <div class="top-bar">
+        <button id="openModalBtn">
+            Thêm sinh viên
+        </button>
+    </div>
+
+    <div class="statistics">
+
+        <p>
+            Tổng số sinh viên:
+            <span id="totalStudents">0</span>
+        </p>
+
+        <p>
+            Điểm trung bình lớp:
+            <span id="averageScore">0</span>
+        </p>
+
+    </div>
+
+    <div id="messageBox">
+
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Lớp</th>
+                <th>Điểm TB</th>
+                <th>Email</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTableBody">
+
+            <tr>
+                <td colspan="7">
+                    Chưa có sinh viên
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="modal" id="studentModal">
+
+        <div class="modal-content">
+
+            <h2>Thêm sinh viên</h2>
+
+            <form id="studentForm">
+
+                <label>Mã sinh viên</label>
+                <input type="text">
+
+                <label>Họ và tên</label>
+                <input type="text">
+
+                <label>Ngày sinh</label>
+                <input type="date">
+
+                <label>Lớp học</label>
+                <input type="text">
+
+                <label>Điểm trung bình</label>
+                <input type="number">
+
+                <label>Email</label>
+                <input type="email">
+
+                <div class="form-buttons">
+
+                    <button type="submit">
+                        Lưu
+                    </button>
+
+                    <button type="button" id="closeModalBtn">
+                        Hủy
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
