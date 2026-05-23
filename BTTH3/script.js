@@ -1,3 +1,4 @@
+let editIndex = -1;
 let students = [];
 
 function saveStudents() {
@@ -87,8 +88,13 @@ function renderStudents() {
                 <td>${student.email}</td>
 
                 <td>
-                    <button>Sửa</button>
-                    <button>Xóa</button>
+                    <button onclick="editStudent(${i})">
+                        Sửa
+                    </button>
+
+                    <button>
+                        Xóa
+                    </button>
                 </td>
 
             </tr>
@@ -159,6 +165,10 @@ closeModalBtn.onclick = function () {
 function resetForm() {
 
     studentForm.reset();
+    editIndex = -1;
+
+    document.querySelector(".modal-content h2")
+    .innerText = "Thêm sinh viên";
 
 }
 
@@ -195,7 +205,13 @@ studentForm.onsubmit = function (event) {
 
     };
 
+    if (editIndex !== -1) {
+    students[editIndex] = student;
+    }
+
+    else {
     students.push(student);
+    }
 
     saveStudents();
 
@@ -208,3 +224,35 @@ studentForm.onsubmit = function (event) {
     resetForm();
 
 };
+
+function editStudent(index) {
+
+    editIndex = index;
+
+    let student = students[index];
+
+    document.getElementById("studentId").value =
+        student.id;
+
+    document.getElementById("studentName").value =
+        student.name;
+
+    document.getElementById("studentBirthday").value =
+        student.birthday;
+
+    document.getElementById("studentClass").value =
+        student.className;
+
+    document.getElementById("studentScore").value =
+        student.score;
+
+    document.getElementById("studentEmail").value =
+        student.email;
+
+    document.querySelector(".modal-content h2")
+        .innerText = "Cập nhật sinh viên";
+
+    studentModal.style.display = "block";
+
+}
+resetForm()
