@@ -144,3 +144,68 @@ const copy = { ...product };
 copy.specs.ram = 16;
 console.log(product.specs.ram);        // 16 Vì spread chỉ copy nông, specs vẫn dùng chung object
 ```
+
+Câu C1
+```javascript
+function processOrders(orders) {
+    return orders
+        .filter(order => order.status === "completed" && order.total > 100000)
+        .map(({ id, customer, total }) => ({
+            id, customer, total,
+            discount: total * 0.1,
+            finalTotal: total - (total * 0.1)
+        }))
+        .sort((a, b) => b.finalTotal - a.finalTotal);
+}
+```
+
+Câu C2
+```javascript
+const miniArray = {
+
+    map(arr, fn) {
+
+        const result = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            result.push(fn(arr[i], i, arr));
+        }
+
+        return result;
+
+    },
+
+    filter(arr, fn) {
+
+        const result = [];
+
+        for (let i = 0; i < arr.length; i++) {
+
+            if (fn(arr[i], i, arr)) {
+                result.push(arr[i]);
+            }
+
+        }
+
+        return result;
+
+    },
+
+    reduce(arr, fn, initialValue) {
+
+        let accumulator = initialValue;
+
+        for (let i = 0; i < arr.length; i++) {
+            accumulator = fn(accumulator, arr[i], i, arr);
+        }
+
+        return accumulator;
+
+    }
+
+};
+
+console.log( miniArray.map([1, 2, 3], x => x * 2));
+console.log( miniArray.filter([1, 2, 3, 4], x => x > 2));
+console.log( miniArray.reduce([1, 2, 3, 4], (a, b) => a + b, 0));
+```
