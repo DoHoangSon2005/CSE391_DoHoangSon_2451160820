@@ -87,3 +87,92 @@ Câu A3
 + OUTER
 - Nếu dùng e.stopPropagation() Output
 + BUTTON
+
+Câu C1
+
+- Code đã sửa
+```javascript
+const countDisplay = document.querySelector(".count");
+const historyList = document.getElementById("history");
+
+let count = 0;
+
+document.querySelector("#incrementBtn").addEventListener("click", function () {
+
+    count++;
+
+    countDisplay.textContent = count;
+
+    const li = document.createElement("li");
+
+    li.textContent = "Count changed to " + count;
+
+    li.addEventListener("click", function () {
+        deleteHistory(this);
+    });
+
+    historyList.append(li);
+});
+
+document.querySelector("#decrementBtn").addEventListener("click", function () {
+
+    count--;
+
+    countDisplay.textContent = count;
+});
+
+document.querySelector("#resetBtn").addEventListener("click", () => {
+
+    count = 0;
+
+    countDisplay.textContent = count;
+
+    historyList.innerHTML = "";
+});
+
+function deleteHistory(element) {
+
+    element.parentNode.removeChild(element);
+}
+
+document.querySelector("#clearHistory").addEventListener("click", () => {
+
+    const items = historyList.querySelectorAll("li");
+
+    items.forEach(item => {
+        item.remove();
+    });
+});
+
+window.addEventListener("beforeunload", () => {
+
+    localStorage.setItem("count", count);
+
+    localStorage.setItem("history", historyList.innerHTML);
+});
+
+window.addEventListener("load", () => {
+
+    count = Number(localStorage.getItem("count")) || 0;
+
+    countDisplay.textContent = count;
+
+    historyList.innerHTML = localStorage.getItem("history") || "";
+});
+```
+
+Câu C2
+
+1. 
+- Tại sao bind event lên 1000 elements riêng lẻ là BAD PRACTICE?
++ Tốn RAM
++ Chậm hơn
++ Khó maintain
++ Khi thêm element mới phải bind lại event
+- Event Delegation giải quyết thế nào?
++ Thay vì bind từng element → bind 1 event lên thẻ cha.
+2. 
++ DocumentFragment là vùng nhớ tạm:
++ Thêm elements vào fragment không render ngay
++ Không gây reflow/repaint mỗi lần append
++ Sau khi build xong toàn bộ 1000 phần tử, chỉ append fragment vào DOM thật 1 lần duy nhất
