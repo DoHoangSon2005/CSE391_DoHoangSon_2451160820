@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Accessibility App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Keyboard Shortcuts App</h1>
+
+        <button id="openCommandBtn" aria-label="Mở command palette">
+            Ctrl + K
+        </button>
+    </header>
+
+    <section class="gallery-section">
+
+        <div class="gallery">
+            <button id="prevBtn" aria-label="Ảnh trước">←</button>
+
+            <img
+                id="galleryImage"
+                src="https://picsum.photos/id/1015/700/400"
+                alt="Gallery Image"
+            >
+
+            <button id="nextBtn" aria-label="Ảnh tiếp theo">→</button>
+        </div>
+
+        <div class="image-info">
+            <p>
+                ← → : Chuyển ảnh |
+                1-5 : Chọn ảnh |
+                Space : Play/Pause |
+                Esc : Đóng modal
+            </p>
+        </div>
+    </section>
+
+    <div class="modal hidden" id="imageModal">
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn"
+                aria-label="Đóng modal"
+            >
+                ✖
+            </button>
+
+            <img id="modalImage" src="" alt="Preview Image">
+
+        </div>
+    </div>
+
+    <div class="command-palette hidden" id="commandPalette">
+
+        <div class="command-box">
+
+            <input
+                type="text"
+                id="commandInput"
+                placeholder="Gõ command..."
+                aria-label="Command Input"
+            >
+
+            <ul id="commandList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
