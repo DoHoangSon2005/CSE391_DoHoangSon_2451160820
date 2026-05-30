@@ -6,11 +6,7 @@ Bài 0.1
 2. Tại sao phải export default App?
 - Để file khác có thể import và sử dụng component App.
 3. Thử xóa export default → chuyện gì xảy ra?
-- React sẽ báo lỗi khi import:
-```
-The requested module './App.jsx' does not provide an export named 'default'
-```
-- Vì main.jsx không lấy được component App.
+- trang web sẽ hiện màn hình trắng vì React không thể import và render component App.
 
 Bài 0.2
 
